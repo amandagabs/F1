@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>F1</h1>
+        <div id="race-track">
+            <!-- Pista -->
+            <div class="track"></div>
+            
+            <!-- Faixa de Chegada -->
+            <div class="finish-line"></div>
+            
+            <!-- Carros -->
+            <div class="car" id="car1"></div>
+            <div class="car" id="car2"></div>
+            <div class="car" id="car3"></div>
+            <div class="car" id="car4"></div>
+            <div class="car" id="car5"></div>
+        </div>
+        
+        <!-- Painel de Apostas -->
+        <div class="betting-panel">
+            <h2>Faça Sua Aposta</h2>
+            <p>Seu Saldo: <span id="balance">R$100</span></p>
+            <input type="number" id="betAmount" min="5" placeholder="Faça sua Aposta (R$)">
+            <select id="driver">
+                <option value="1">Valentina</option>
+                <option value="2">Mariana</option>
+                <option value="3">Vitoria</option>
+                <option value="4">Jessica</option>
+                <option value="5">Gabriele</option>
+            </select>
+            <button id="placeBet">Aposte</button>
+        </div>
+        
+        <!-- Resultado -->
+        <div class="result" id="result"></div>
+        
+        <!-- Botão Iniciar Corrida -->
+        <button id="startRace" disabled>Iniciar Corrida</button>
+    </div>
+
+    <!-- Caixas de Diálogo -->
+    <div id="dialog" style="display: none;">
+        <p id="dialogText"></p>
+    </div>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
